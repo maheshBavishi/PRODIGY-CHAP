@@ -1,0 +1,68 @@
+@import '../../../scss/mixins/index.scss';
+
+.meetSection {
+    background-color: #F5F5F7;
+    padding: 100px 0;
+
+    .text {
+        padding: 0 0 60px 0;
+
+        h2 {
+            @include heading1;
+            color: #16171a;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    .grid {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 320px 1fr;
+        gap: 60px;
+
+        .socialIcon {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            svg {
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover {
+                    path {
+                        opacity: 1;
+                    }
+                }
+                path {
+                    fill: #222;
+                    opacity: 0.5;
+                transition: .3s ease-in-out;
+                }
+            }
+        }
+
+        .griditems {
+            h3 {
+                @include font16;
+                font-weight: 500;
+                margin: 0 0 20px 0;
+            }
+
+            p {
+                @include font18;
+                margin: 0 0 20px 0;
+                color: #444;
+            }
+
+            .img {
+                img {
+                    width: 100%;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}

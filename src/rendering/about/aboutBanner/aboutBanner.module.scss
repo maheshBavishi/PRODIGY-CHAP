@@ -1,0 +1,28 @@
+@import '../../../scss/mixins/index.scss';
+
+.aboutBannerAlignment {
+    padding: 100px 0;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 100px;
+
+        h2 {
+            @include heading1;
+            color: #16171a;
+            margin: 0 0 24px 0;
+        }
+        p {
+            @include font18;
+        }
+
+        .img {
+            img {
+                width: 100%;
+                display: block;
+                border-radius: 12px;
+            }
+        }
+    }
+}

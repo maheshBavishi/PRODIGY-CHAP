@@ -1,0 +1,26 @@
+@import '../../../scss/mixins/index.scss';
+
+.whyChooseUsAlignment {
+    padding: 100px 0;
+
+    h2 {
+        @include heading1;
+        color: #16171a;
+        margin: 0 0 24px 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0 0 0 20px;
+
+        li {
+            @include font18;
+            color: #444;
+            padding: 0 0 20px 0;
+        }
+
+        li:last-child {
+            padding: 0;
+        }
+    }
+}

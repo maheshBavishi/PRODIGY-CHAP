@@ -1,0 +1,64 @@
+@import '../../../scss/mixins/index.scss';
+
+.serviceSectionAlignment {
+    padding: 100px 0;
+
+    .title {
+        padding: 0 0 60px 0;
+        h2 {
+            color: #16171a;
+            text-align: center;
+            @include heading1;
+        }
+    }
+.allGridAlignment {
+    .grid:last-child {
+        padding: 0;
+    }
+    .grid:nth-child(2n+2) {
+        .griditems:first-child {
+            order: 2;
+        }
+    }
+}
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 120px;
+        padding: 0 0 100px 0;
+
+        .griditems {
+            position: relative;
+
+          
+        }
+
+        h3 {
+            font-size: 32px;
+            color: #16171a;
+            margin: 0 0 24px 0;
+        }
+
+        p {
+            @include font18;
+            color: #444;
+        }
+        ul {
+            margin: 0;
+            padding: 20px 0 0 20px;
+            li {
+                @include font18;
+                padding: 0 0 14px 0;
+                color: #444;
+            }
+        }
+
+        .img {
+            img {
+                width: 100%;
+                border-radius: 12px;
+                display: block;
+            }
+        }
+    }
+}

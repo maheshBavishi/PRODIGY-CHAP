@@ -1,0 +1,32 @@
+@import '../../../scss/mixins/index.scss';
+
+.ourClientsArrival {
+    background-color: #F5F5F7;
+    padding: 100px 0;
+
+    .text {
+        padding: 0 0 60px 0;
+
+        h2 {
+            @include heading1;
+            color: #16171a;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 24px;
+
+        .img {
+            img {
+                width: 100%;
+                border-radius: 12px;
+                display: block;
+            }
+        }
+    }
+
+}

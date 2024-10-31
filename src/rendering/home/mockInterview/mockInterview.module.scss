@@ -1,0 +1,23 @@
+@import '../../../scss/mixins/index.scss';
+
+.mockInterview {
+    padding: 0px 0 100px 0;
+
+    .text {
+        padding: 0 0 60px 0;
+        h2 {
+            @include heading1;
+            color: #16171a;
+            text-align: center;
+            
+        }
+    }
+
+    .img {
+        img {
+            width: 100%;
+            border-radius: 12px;
+            display: block;
+        }
+    }
+}

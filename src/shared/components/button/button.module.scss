@@ -1,0 +1,19 @@
+@import '../../../scss/mixins/index.scss';
+
+.button {
+    button {
+        border: 1px solid #F36523;
+        color: #fff;
+        background-color: #F36523;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 500;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+        border-radius: 6px;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}

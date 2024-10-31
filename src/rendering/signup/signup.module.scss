@@ -1,0 +1,94 @@
+@import '../../scss/mixins/index.scss';
+
+
+.loginPagealignment {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 700px;
+    gap: 0;
+
+    .content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 60px 100px;
+
+        .wfull {
+            width: 100%;
+        }
+
+        .lastText {
+            p {
+                @include font16;
+                color: 444;
+                text-align: center;
+
+                a {
+                color: #F36523;
+                }
+            }
+        }
+
+        .spacer {
+            padding: 0 0 24px 0;
+        }
+        .twocol {
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            gap: 0 24px;
+            padding: 0 0 24px 0;
+        }
+        .button {
+            padding: 24px 0 16px 0;
+            button {
+                width: 100%;
+            }
+        }
+        .forgotPassword {
+            padding: 16px 0 0 0;
+
+            a {
+                display: block;
+                color: #F36523;
+                @include font16;
+                cursor: pointer;   
+                text-align: right;
+            }
+        }
+
+        .text {
+            padding: 0 0 30px 0;
+            h2 {
+                color: #16171a;
+                margin: 0 0 10px 0;
+                @include heading1;
+            }
+
+            p {
+                @include font18;
+                color: #444;
+            }
+        }
+
+    }
+
+    .layer {
+        height: 100%;
+        background-color: #F5F5F7;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .logo {
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            img {
+                display: block;
+                cursor: pointer;
+                max-width: 220px;
+            }
+        }
+    }
+}

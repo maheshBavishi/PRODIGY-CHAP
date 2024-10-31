@@ -1,0 +1,86 @@
+@import '../../../scss/mixins/index.scss';
+
+.footer {
+    padding: 60px 0 0 0;
+    
+    
+    .copyright {
+        padding: 24px 0;
+        p {
+            @include font18;
+            color: #444;
+            text-align: center;
+        }
+    }
+
+    .footerAlignment {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 60px 0;
+        border-bottom: 1px solid #e0e0e0;
+
+        .logo {
+            padding: 0 0 24px 0;
+            img {
+                display: block;
+                cursor: pointer;
+                max-width: 220px;
+            }
+        }
+        .socialIcon {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            svg {
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover {
+                    path {
+                        opacity: 1;
+                    }
+                }
+                path {
+                    fill: #222;
+                    opacity: 0.5;
+                transition: .3s ease-in-out;
+                }
+            }
+        }
+        .twoList {
+            display: flex;
+            gap: 70px;
+        }
+        h3 {
+            font-size: 22px;
+            color: #16171a;
+            font-weight: 600;
+            margin: 0 0 34px 0;
+        }
+        a {
+            display: block;
+            @include font16;
+            color: #16171a;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 0 0 20px 0;
+            transition: .2s ease-in-out;
+
+            &:hover {
+                transition: .3s ease-in-out;
+                color: #008A10;
+
+            }
+        }
+        .text {
+            padding: 0 0 24px 0;
+            p {
+                @include font18;
+                max-width: 480px;    
+                color: #16171a;
+            }
+        }
+    }
+}

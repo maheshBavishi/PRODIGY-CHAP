@@ -1,0 +1,91 @@
+@import '../../scss/mixins/index.scss';
+
+.faqsectionAlignment {
+    padding: 100px 0;
+    background-color: #F5F5F7;
+
+    .title {
+        padding: 0 0 60px 0;
+
+        h2 {
+            @include heading1;
+            color: #16171a;
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+        p {
+            @include font18;
+            color: #444;
+            text-align: center;
+        }
+    }
+
+    .allfaqSectionAlignment {
+        max-width: 900px;
+        margin: 0 auto;
+        
+        .faq {
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            margin: 0 0 24px 0;
+            transition: .3s ease-in-out;
+
+            &.faqtoogle {
+                background-color: #fff;
+
+                .faqHeader {
+                    svg {
+                        transform: rotate(40deg);
+                    }
+                }
+            }
+
+            .faqbody {
+                &.hide {
+                    max-height: 0px;
+                    overflow: hidden;
+                    transition: .3s ease-in-out;
+                }
+
+                &.show {
+                    max-height: 100vh;
+                    overflow: hidden;
+                    transition: .3s ease-in-out;
+                }
+
+                .sapcing {
+                    padding: 20px 0 0 0;
+
+                    p {
+                        @include font16;
+                        color: #444;
+                    }
+                }
+            }
+
+            .faqHeader {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    font-size: 20px;
+                    color: #444;
+                }
+
+                svg {
+                    width: 18px;
+                    height: 18px;
+                    transition: .3s ease-in-out;
+                    cursor: pointer;
+
+                    path {
+                        fill: #444;
+                    }
+                }
+            }
+        }
+
+    }
+}
